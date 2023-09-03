@@ -1030,7 +1030,7 @@ footer{
 	.navitems li a{	
 		text-decoration: none;
 		font-size: 15px;
-		font-weight: bold;
+		font-weight: 600;
 		display: block;
 		color: black;
 		padding: 10px 0;
@@ -1074,7 +1074,7 @@ footer{
 		text-align: center;
 	}
 	.header-paragraph{
-		line-height: 2;
+		line-height: 1.6;
 		font-size: 1.1em;
 	}
 	.header-text h1{
@@ -1101,7 +1101,7 @@ footer{
 	}
 	.header-text h4{
 		color: white;
-		font-size: 1.8em;
+		font-size: 1.6em;
 		font-weight: bold;
 		padding: 0 5%;
 	}
@@ -1109,7 +1109,7 @@ footer{
 		font-weight: bold;
 		color: white;
 		background-color: #2ca2ad;
-		width: 35%;
+		width: 40%;
 		text-align: center;
 		border-radius: 15px;
 	}
@@ -1182,12 +1182,12 @@ footer{
 	}
 	.skills-head p{
 		color: #2ca2ad;
-		font-weight: 800;
+		font-weight: 650;
 		font-size: 1em;
 	}
 	.skill-img{
 		width: 20%;
-		height: 20%;
+		height: 10%;
 		margin: 0.8% 2%;
 		padding: 3%;
 		padding-bottom: 0.5%;
@@ -1199,7 +1199,7 @@ footer{
 		color: rgb(187, 186, 186);
 		margin: 7% auto;
 		padding-top: 15%;
-		font-weight: 750;
+		font-weight: 600;
 		letter-spacing: 1;
 		text-align: center;
 		font-size: 0.65em;
@@ -1209,7 +1209,7 @@ footer{
 		opacity: 80%;
 		text-align: center;
 		width: 100%;
-		height: 100%;
+		height: 7%;
 		/* border-radius: 50%; */
 	}
 	.skill-img{
