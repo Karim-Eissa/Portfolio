@@ -179,11 +179,12 @@ article{
 	margin-top: 7%;
 }
 .skill-collection{
-	width:90%;
+	width:60%;
 	margin: 1.5% auto;
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
 	text-align: center;
-	justify-content: center;
 }
 .skills-head{
 	text-align: center;
@@ -199,10 +200,9 @@ article{
 	font-size: 1.2em;
 }
 .skill-img{
-	width: 10%;
-	height: 10%;
-	margin: 0.1% 2%;
-	padding: 2%;
+	width: 55%;
+	height: 70%;
+	padding: 7%;
 	padding-bottom: 0.5%;
 	border-radius: 10px;
 	background-color: #14191f;
@@ -211,11 +211,12 @@ article{
 .skill-img p{
 	color: rgb(187, 186, 186);
 	margin: 7% auto;
-	padding-top: 15%;
+	margin-top: 1em;
 	font-weight: 750;
 	letter-spacing: 1;
 	text-align: center;
 	font-size: 0.9em;
+	white-space: nowrap;
 	/* font-family: 'Fira Sans', sans-serif; */
 }
 .skill-img img{
@@ -669,35 +670,41 @@ article{
 .skills{
 	margin-top: 7%;
 }
-.skill-collection{
-	width:90%;
+.skill-collection {
+	width:80%;
 	margin: 1.5% auto;
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
 	text-align: center;
-	justify-content: center;
 }
-.skills-head{
+
+.skills-head {
 	text-align: center;
 	margin-bottom: 3%;
 }
-.skills-head h1{
+
+.skills-head h1 {
 	font-weight: bold;
 	color: white;
 }
-.skills-head p{
+
+.skills-head p {
 	color: #2ca2ad;
-	font-weight: 800;
-	font-size: 1.2em;
+	font-weight: 650;
+	font-size: 1em;
 }
-.skill-img{
-	width: 14%;
-	height: 14%;
-	margin: 0.4% 2%;
-	padding: 2%;
+
+.skill-img {
+	padding: 3%;
+	width: 60%;
+	height: 65%;
 	padding-bottom: 0.5%;
 	border-radius: 10px;
 	background-color: #14191f;
 	text-align: center;
+	box-shadow: 1px 3px 5px black;
+	transition-duration: 0.2s;
 }
 .skill-img p{
 	color: rgb(187, 186, 186);
@@ -748,12 +755,13 @@ article{
 .projects-collection{
 	display: flex;
 	justify-content: space-evenly;
-	margin: 10% auto;
-	width: 80%;
+	margin: 4% auto;
+	width: 100%;
 }
 .proj{
 	color:white;
 	text-align: center;
+	width: 50%;
 	font-family: 'Fira Sans', sans-serif;
 }
 .proj-overview{
@@ -830,7 +838,7 @@ article{
 	margin: 2% auto;
 	border-radius: 10px;
 	background-color: white;
-	width:50%;
+	width:80%;
 	padding: 2%;
 
 }
@@ -883,6 +891,7 @@ footer{
 	font-size: 3em;
 	font-weight: bold;
 	color: #2ca2ad;
+	white-space: nowrap;
 }
 .footer-box2{
 	margin-left: 7%;
@@ -1080,7 +1089,7 @@ footer{
 	.header-text h1{
 		color:white;
 		font-weight: bold;
-		font-size: 4em;
+		font-size: 3em;
 		white-space: nowrap;
 	}
 	.header-text p{
@@ -1160,68 +1169,69 @@ footer{
 		font-weight: 1;
 		font-size: 1.2em;
 	}
-	.skills{
+	.skills {
 		margin-top: 7%;
 		padding: 6% 0;
 	}
-	.skill-collection{
-		width:90%;
-		margin: 2% auto;
-		display: flex;
+	
+	.skill-collection {
+		width:80%;
+		margin: 1.5% auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
 		text-align: center;
-		justify-content: center;
-		flex-wrap: wrap;
 	}
-	.skills-head{
+	
+	.skills-head {
 		text-align: center;
 		margin-bottom: 3%;
 	}
-	.skills-head h1{
+	
+	.skills-head h1 {
 		font-weight: bold;
 		color: white;
 	}
-	.skills-head p{
+	
+	.skills-head p {
 		color: #2ca2ad;
 		font-weight: 650;
 		font-size: 1em;
 	}
-	.skill-img{
-		width: 20%;
-		height: 10%;
-		margin: 0.8% 2%;
+	
+	.skill-img {
 		padding: 3%;
+		width: 60%;
+		height: 65%;
 		padding-bottom: 0.5%;
 		border-radius: 10px;
 		background-color: #14191f;
 		text-align: center;
+		box-shadow: 1px 3px 5px black;
+		transition-duration: 0.2s;
+		margin: 0 auto;
 	}
-	.skill-img p{
+	
+	.skill-img:hover {
+		box-shadow: 1px 3px 5px rgb(199, 199, 199);
+	}
+	
+	.skill-img p {
 		color: rgb(187, 186, 186);
 		margin: 7% auto;
 		padding-top: 15%;
 		font-weight: 600;
-		letter-spacing: 1;
-		text-align: center;
-		font-size: 0.65em;
-		/* font-family: 'Fira Sans', sans-serif; */
+		letter-spacing: 1px;
+		font-size: 0.7em;
+		white-space: nowrap;
 	}
-	.skill-img img{
+	
+	.skill-img img {
 		opacity: 80%;
-		text-align: center;
 		width: 100%;
-		height: 7%;
-		/* border-radius: 50%; */
+		height: 100%;
 	}
-	.skill-img{
-		/* scale: 1.07; */
-		transition-duration: 0.2s; 
-		box-shadow: 1px 3px 5px black;
-	}
-	.skill-img:hover{
-		/* scale: 1.07; */
-		transition-duration: 0.2s; 
-		box-shadow: 1px 3px 5px rgb(199, 199, 199);
-	}
+	
 	.projects{
 		margin-top: 8%;
 		background-color: #14191f;
@@ -1245,12 +1255,14 @@ footer{
 		display: block;
 		justify-content: space-evenly;
 		margin: 5% auto;
-		width: 80%;
+		width: 100%;
 	}
 	.proj{
 		color:white;
 		text-align: center;
 		font-family: 'Fira Sans', sans-serif;
+		width: 80%;
+		margin: 0 auto;
 	}
 	.proj-overview{
 		position: relative;
